@@ -17,8 +17,8 @@ public class Main {
         Sheep[] barany = {baran,baran1,baran2,baran3,baran4};
         Sheep[] barany1 = {baran3};
 
-        Horse loshad = new Horse((float) 310.5,(byte)3,"M","Jorgo");
-        Horse loshad1 = new Horse((float) 315.4,(byte)2,"M","Konor");
+        Horse loshad = new Horse((float) 310.5,(byte)3,"M","Jorgo","Ak");
+        Horse loshad1 = new Horse((float) 315.4,(byte)2,"M","Konor","Kara");
         Horse[] loshadi = {loshad,loshad1};
         Horse[] loshadi1 = {loshad1};
 
@@ -37,7 +37,7 @@ public class Main {
         }
         System.out.println("Лошади----------------------");
         for (Horse w: loshadi) {
-            System.out.println("Вес "+w.getWeight()+"кг Возраст "+w.getAge()+" "+w.getGender()+" "+w.getNickName());
+            System.out.println("Вес "+w.getWeight()+"кг Возраст "+w.getAge()+" "+w.getGender()+" "+w.getNickName()+" "+w.getColor());
         }
         System.out.println("****************************");
     Farm farm1 = new Farm();
@@ -54,7 +54,7 @@ public class Main {
         }
         System.out.println("Лошади----------------------");
         for (Horse g: loshadi1) {
-            System.out.println("Вес "+g.getWeight()+"кг Возраст "+g.getAge()+" Пол "+g.getGender()+" Имя "+g.getNickName());
+            System.out.println("Вес "+g.getWeight()+"кг Возраст "+g.getAge()+" Пол "+g.getGender()+" Имя "+g.getNickName()+" "+g.getColor());
         }
     }
 }
